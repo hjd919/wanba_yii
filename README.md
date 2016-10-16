@@ -12,7 +12,7 @@
 2. 执行命令 composer update --prefer-dist
 
 #yii2扩展
-##redis
+##yii2-redis扩展
 ##模版引擎smarty
 ##模版bootstrap
 ##http请求类
