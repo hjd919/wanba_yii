@@ -13,7 +13,7 @@
 
 #yii2扩展
 ##yii2-redis扩展
-##模版引擎smarty
+##yii2-模版引擎smarty扩展
 ##模版bootstrap
 ##http请求类
 
