@@ -12,9 +12,9 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap'           => ['log'],
     'modules'             => [
-        'user' => [
-            'as backend' => 'dektrium\user\filters\BackendFilter',
-        ],
+        // 'user' => [
+        //     'as backend' => 'dektrium\user\filters\BackendFilter',
+        // ],
     ],
     'components'          => [
         'request'      => [
