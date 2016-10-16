@@ -1,4 +1,4 @@
-#安装
+#安装yii2
 1. php init(/path/to/php-bin/php /path/to/yii-application/init --env=Production --overwrite=All)
 
 数据库连接配置
