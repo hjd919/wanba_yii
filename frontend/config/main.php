@@ -12,9 +12,9 @@ return [
     'bootstrap'           => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'modules'             => [
-        // 'user' => [
-        //     'as frontend' => 'dektrium\user\filters\FrontendFilter',
-        // ],
+        'user' => [
+            'as frontend' => 'dektrium\user\filters\FrontendFilter',
+        ],
     ],
     'components'          => [
         'request'      => [
@@ -31,13 +31,13 @@ return [
         'name' => 'advanced-frontend',
         ],*/
         // composer::yii2-user
-        /*        'user'         => [
-        'identityCookie' => [
-        'name'     => '_frontendIdentity',
-        'path'     => '/',
-        'httpOnly' => true,
+        'user'         => [
+            'identityCookie' => [
+                'name'     => '_frontendIdentity',
+                'path'     => '/',
+                'httpOnly' => true,
+            ],
         ],
-        ],*/
         'session'      => [
             'name'         => 'FRONTENDSESSID',
             'cookieParams' => [
