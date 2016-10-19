@@ -1,111 +1,95 @@
-html,
-body {
-    height: 100%;
+.enter-tab {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5rem;
+    background-color: #fff;
+    margin-bottom: .7rem;
 }
-
-.wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+.enter-tab a {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .4rem;
 }
-
-.wrap > .container {
-    padding: 70px 15px 20px;
+.enter-tab img {
+    max-width: 100%;
 }
-
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+/* 盒子 */
+.main-col {
+    background: #fff;
+    margin-bottom: 10px;
 }
-
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
+.title-mod {
+    height: 50px;
+    padding: 0 15px;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
 }
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+.title-mod .title-cont {
+    display: -webkit-box;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
 }
-
-.not-set {
-    color: #c55;
-    font-style: italic;
-}
-
-/* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    padding-left: 5px;
-}
-
-a.asc:after {
-    content: "\e151";
-}
-
-a.desc:after {
-    content: "\e152";
-}
-
-.sort-numerical a.asc:after {
-    content: "\e153";
-}
-
-.sort-numerical a.desc:after {
-    content: "\e154";
-}
-
-.sort-ordinal a.asc:after {
-    content: "\e155";
-}
-
-.sort-ordinal a.desc:after {
-    content: "\e156";
-}
-
-.grid-view td {
-    white-space: nowrap;
-}
-
-.grid-view .filters input,
-.grid-view .filters select {
-    min-width: 50px;
-}
-
-.hint-block {
+.title-cont:before {
+    content: '';
+    width: 3px;
+    height: 14px;
+    margin-right: 6px;
     display: block;
-    margin-top: 5px;
+    background: #f80;
+}
+.title-mod .more-col {
+    margin-left: 5px;
     color: #999;
 }
-
-.error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
+.gm-wrap {
+    overflow: hidden;
 }
-
-/* align the logout "link" (button in form) of the navbar */
-.nav > li > form {
-    padding: 8px;
+.gm-list-col {
+    display: -webkit-box;
+    padding-left: 15px;
 }
-
-@media(max-width:768px) {
-	.nav li > form {
-	    padding: 3px;
-	}
+.gm-list-col .items {
+    width: 76px;
+    display: block;
+    -webkit-box-flex: 0;
+    margin-left: 22px;
 }
-
-.nav > li > form > button:hover {
-    text-decoration: none;
+/* 第一个元素 */
+.gm-list-col .items:first-child {
+    margin-left: 0;
+}
+.gm-list-col .img-clip {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gm-list-col .img {
+    width: 76px;
+    height: 76px;
+    -webkit-border-radius: 15px;
+}
+.gm-list-col .name, .hot-list .items {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gm-list-col .name {
+    height: 44px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    text-align: center;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
 }
