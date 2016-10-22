@@ -1,6 +1,3 @@
-html {
-    line-height: 1;
-}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -8,6 +5,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
+}
+html {
+    line-height: 1;
 }
 body {
     font-size: 12px;
@@ -18,6 +18,29 @@ body {
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
 }
+/* 清除浮动 */
+.f-cb {
+    zoom: 1;
+}
+.f-cb:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+/* 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+/* 列表 */
+ol, ul {
+    list-style: none;
+}
 /* 链接 */
 a {
     color: #333;
@@ -27,6 +50,18 @@ a {
 a img {
     border: none;
 }
+@media only screen and (max-width: 320px){html{font-size: 9px;} }
+@media only screen and (min-width: 320px) and (max-width: 352px){html{font-size: 10px;} }
+@media only screen and (min-width: 352px) and (max-width: 384px){html{font-size: 11px;} }
+@media only screen and (min-width: 384px) and (max-width: 416px){html{font-size: 12px;} }
+@media only screen and (min-width: 416px) and (max-width: 448px){html{font-size: 13px;} }
+@media only screen and (min-width: 448px) and (max-width: 480px){html{font-size: 14px;} }
+@media only screen and (min-width: 480px) and (max-width: 512px){html{font-size: 15px;} }
+@media only screen and (min-width: 512px) and (max-width: 544px){html{font-size: 16px;} }
+@media only screen and (min-width: 544px) and (max-width: 576px){html{font-size: 17px;} }
+@media only screen and (min-width: 576px) and (max-width: 608px){html{font-size: 18px;} }
+@media only screen and (min-width: 608px) and (max-width: 640px){html{font-size: 19px;} }
+@media only screen and (min-width: 640px){html{font-size: 20px;} }
 /* 顶部搜索框 */
 .search-top {
      display: -webkit-box;
@@ -82,8 +117,8 @@ a img {
 .tab-nav {
     width: 100%;
     height: 40px;
-    display: -webkit-box;
     padding: 0 23px;
+    display: -webkit-box;
     border-bottom: 1px solid #ddd;
     background: #fafafa;
     -webkit-box-sizing: border-box;
@@ -98,4 +133,64 @@ a img {
     -webkit-box-flex: 1;
     color: #333;
     font-size: 14px;
+}
+
+/* 友情链接 */
+.firend-col {
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+.firend-col .fr-title {
+    display: block;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+}
+.fr-cont {
+    position: relative;
+    padding: 0 15px;
+    margin-top: 16px;
+}
+.fr-cont .toggle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    border: 0 solid rgba(201,201,201,0.75);
+    border-width: 2px 2px 0 0;
+    bottom: 5px;
+    -webkit-transform: rotate(-46deg);
+}
+.fr-cont.over {
+    height: 24px;
+    overflow: hidden;
+}
+.fr-cont.over .toggle {
+    bottom: 12px;
+    -webkit-transform: rotate(135deg);
+}
+.fr-cont .items {
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+}
+.fr-cont .items:after {
+    content: '';
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    background: #666;
+    display: block;
+}
+.fr-cont:before, .fr-cont:after {
+    display: table;
+    content: "";
+    line-height: 0;
 }
