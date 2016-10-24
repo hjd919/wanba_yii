@@ -433,18 +433,33 @@ $this->title = 'My Yii Application';
         </dl>
         <div class="view-more" data-statis="text:txt_index_kfkc_po-more_other-more"><a href="http://i.9game.cn/kc/">查看更多游戏动态<img src="http://image.uc.cn/s/uae/g/1m/ngp_portal/ios_game/view-more-icon.png"></a></div>
     </div>
-	<div class="main-col">
-		<div class="firend-col">
-			<p class="fr-title">友情链接</p>
-			<div class="fr-cont over"><span class="toggle"></span>
-					<a href="http://bbs.9game.cn/" class="items">九游论坛</a>
-					<a href="http://m.itmo.com/" class="items">手机游戏下载</a>
-					<a href="http://m.zhaodanji.com/" class="items">找游戏手游网</a>
-					<a href="http://bbs.shuowan.com/" class="items">说玩网论坛</a>
-					<a href="http://m.anwan.com/" class="items">安玩游戏下载</a>
-					<a href="http://www.59600.com/" class="items">手机小游戏</a>
-					<a href="http://m.91danji.com/" class="items">手机游戏下载</a>
-					<a href="http://m.cr173.com/" class="items">西西软件园</a>
-			</div>
-		</div>
-	</div>
+    <div class="main-col">
+        <div class="firend-col">
+            <p class="fr-title">友情链接</p>
+            <div class="fr-cont over"><span class="toggle"></span>
+                    <a href="http://bbs.9game.cn/" class="items">九游论坛</a>
+                    <a href="http://m.itmo.com/" class="items">手机游戏下载</a>
+                    <a href="http://m.zhaodanji.com/" class="items">找游戏手游网</a>
+                    <a href="http://bbs.shuowan.com/" class="items">说玩网论坛</a>
+                    <a href="http://m.anwan.com/" class="items">安玩游戏下载</a>
+                    <a href="http://www.59600.com/" class="items">手机小游戏</a>
+                    <a href="http://m.91danji.com/" class="items">手机游戏下载</a>
+                    <a href="http://m.cr173.com/" class="items">西西软件园</a>
+            </div>
+        </div>
+    </div>
+    <div class="other-col">
+        <a href="http://a.9game.cn" data-statis="text:txt_index_android_po-2_other-android">九游安卓频道</a>
+    </div>
+    <footer class="bottom-record">
+        <p class="bottom-record-line">粤ICP备09210879号-20 粤网文[2013]0245-095号</p>
+    </footer>
+    <div class="down-sub">
+          <img src="http://image.uc.cn/s/uae/g/1m/ngp_portal/ios_game/app-logo.png" class="app-ico">
+          <div class="app-infos">
+              <h3 class="name">九游客户端</h3>
+              <p class="prm">轻松找游戏,欢乐领福利!</p>
+          </div>
+        <a href="http://ibiz.assistant.9game.cn/client/down?ch=4" class="down-btn">立即下载</a>
+          <span class="close-app" id="closeApp"></span>
+    </div>
